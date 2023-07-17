@@ -146,8 +146,20 @@ export default function Footer() {
 
             {/* Copyrights note */}
             <div className="text-gray-400 text-xs mr-4">
-              &copy; Adeobajesu Aboluwade. All
-              rights reserved. Web dev by Ali Mora
+              &copy;{" "}
+              <strong>
+                Adeobajesu Aboluwade.
+              </strong>{" "}
+              All rights reserved. Web dev by{" "}
+              <strong>
+                <a
+                  href="https://alimora-portfolio.vercel.app/"
+                  target="_blank"
+                >
+                  {" "}
+                  Ali Mora
+                </a>
+              </strong>
             </div>
           </div>
         </div>
