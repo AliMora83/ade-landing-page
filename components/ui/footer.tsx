@@ -18,7 +18,7 @@ export default function Footer() {
                   aria-label="Ado"
                 >
                   <h6 className="p-1 font-bold">
-                    👋 Thanks for visting
+                    👋 Thanks for visiting
                   </h6>
                 </Link>
               </div>
