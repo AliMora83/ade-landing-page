@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import FeatImage01 from "@/public/images/adeoba.jpg";
 
-export default function Zigzag() {
+export default function About() {
   return (
     <section id="about">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

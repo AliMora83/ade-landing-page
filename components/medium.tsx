@@ -1,9 +1,9 @@
-export default function Newsletter() {
+export default function Medium() {
   return (
     <section>
       <div
-        className="max-w-6xl mx-auto px-4 sm:px-6"
-        id="contact"
+        className="max-w-6xl mx-auto px-4 sm:px-6 my-10"
+        id="medium"
       >
         {/* CTA box */}
         <div
@@ -50,49 +50,28 @@ export default function Newsletter() {
               />
             </svg>
           </div>
-          <div className="relative flex flex-col lg:flex-row justify-between items-center">
+          <div className="relative flex flex-col lg:flex-row justify-evenly items-center">
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
               <h3 className="h3 text-white mb-2">
-                Stay in the loop
+                Read my latest blog
               </h3>
-              <p className="text-purple-200 text-lg">
-                Join our newsletter to get top
-                news before anyone else.
+              <p className="text-purple-200 text-base">
+                Follow me on{" "}
+                <strong>Medium</strong> to stay up
+                to date with my latest content
               </p>
             </div>
 
             {/* CTA form */}
-            <form
-              data-netlify="true"
-              className="w-full lg:w-1/2"
-              id="newsletterForm"
-              action="/submit"
-            >
-              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input
-                  type="email"
-                  name="email"
-                  id="emailInput"
-                  className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
-                  placeholder="Your best email…"
-                  aria-label="Your best email…"
-                />
-                <button
-                  type="submit"
-                  className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
-                >
-                  Subscribe
-                </button>
-              </div>
-              {/* Success message */}
-              <p
-                id="successMessage"
-                className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm hidden"
+            <div className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 text-sm">
+              <a
+                href="https://medium.com/@adeoba.mercies"
+                target="_blank"
               >
-                Thanks for subscribing!
-              </p>
-            </form>
+                <button>View on Medium</button>
+              </a>
+            </div>
             <script src="index.js"></script>
           </div>
         </div>

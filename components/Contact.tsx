@@ -31,93 +31,105 @@ export default function Contact({}: Props) {
   const onSubmit: SubmitHandler<Inputs> = (
     formData
   ) => {
-    window.location.href = `mailto:ali@openmindi.co.za?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}. Here is my email ${formData.email}`;
+    window.location.href = `mailto:adeoba.mercies@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}. Here is my email ${formData.email}`;
   };
 
   return (
     <div
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-col
-    max-w-7xl px-10 mx-auto items-center justify-center selection:bg-[#f7ab0a] selection:text-gray-100"
+      data-aos="fade-up"
+      data-aos-delay="400"
+      className="flex my-40
+    px-10 items-center justify-evenly selection:bg-purple-100 selection:text-gray-100"
     >
-      <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-xl">
-        Contact
-      </h3>
+      {/* Contact Info */}
+      <div>
+        <h3 className=" text-gray-500 text-base">
+          Contact Information
+        </h3>
 
-      <div className="space-y-5 px-0 md:px-6 text-center mt-32 mb-5 ">
-        <h2 className="md:text-lg text-base">
-          Ready to{" "}
-          <span className="underline decoration-[#f7ab0a]">
-            start
-          </span>
-          ?
-          <br />
-          contact me
-        </h2>
-      </div>
+        <div className="mb-5 ">
+          <h2 className="text-xl font-bold">
+            Ready to{" "}
+            <span className="underline decoration-purple-100">
+              start
+            </span>
+            ? contact me
+          </h2>
+        </div>
 
-      <div className="space-y-3 md:pb-10 pb-5">
-        <a
-          href="https://api.whatsapp.com/send?phone=789658725"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+        <div className="space-y-3 text-gray-400">
+          <a
+            href="https://api.whatsapp.com/send/?phone=2348142064130&text=Hello%2C+Mr+Adeobajesu.+I+got+your+contact+from+LinkedIn+and+I%27ll+love+to+have+a+conversation+with+you.%0A%0AMy+name+is+........+&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex space-x-5">
+              <PhoneIcon className="text-purple-100 h-5 w-5 animate-pulse" />
+              <p className="text-sm md:text-base">
+                +234 814 206 4130
+              </p>
+            </div>
+          </a>
+
+          <div className="flex space-x-5">
+            <EnvelopeIcon className="text-purple-100 h-5 w-5 animate-pulse" />
             <p className="text-sm md:text-base">
-              +27 78 965 8725
+              adeoba.mercies@gmail.com
             </p>
           </div>
-        </a>
-
-        <div className="flex items-center space-x-5 justify-center">
-          <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-          <p className="text-sm md:text-base">
-            ali@openmindi.co.za
-          </p>
-        </div>
-        <div className="flex items-center space-x-5 justify-center">
-          <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-          <p className="text-sm md:text-base">
-            South Africa - Remote
-          </p>
+          <div className="flex space-x-5">
+            <MapPinIcon className="text-purple-100 h-5 w-5 animate-pulse" />
+            <p className="text-sm md:text-base">
+              Lagos, Nigeria - Remote
+            </p>
+          </div>
         </div>
       </div>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 w-full md:w-fit mx-auto"
-      >
-        <div className="md:flex md:space-x-2">
+
+      {/* Contact Form */}
+      <div className="form">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 w-full md:w-fit mx-auto"
+          target="_blank"
+        >
+          <div className="md:flex md:space-x-2">
+            <input
+              {...register("name")}
+              placeholder="name"
+              className="contactInput"
+              type="text"
+              required
+            />
+            <input
+              {...register("email")}
+              placeholder="email"
+              className="contactInput"
+              type="email"
+              required
+            />
+          </div>
           <input
-            {...register("name")}
-            placeholder="name"
+            {...register("subject")}
+            placeholder="subject"
             className="contactInput"
             type="text"
+            required
           />
-          <input
-            {...register("email")}
-            placeholder="email"
+          <textarea
+            {...register("message")}
+            placeholder="message"
             className="contactInput"
-            type="email"
+            required
           />
-        </div>
-        <input
-          {...register("subject")}
-          placeholder="subject"
-          className="contactInput"
-          type="text"
-        />
-        <textarea
-          {...register("message")}
-          placeholder="message"
-          className="contactInput"
-        />
-        <button
-          type="submit"
-          className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
-        >
-          Submit
-        </button>
-      </form>
+          <button
+            type="submit"
+            className="bg-purple-100 py-5 px-10 rounded-md text-black font-bold text-lg"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
