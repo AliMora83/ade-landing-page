@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative selection:bg-[#0e2844] selection:text-gray-100">
         {/* Illustration behind hero content */}
         <div
           className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
@@ -27,12 +27,12 @@ export default function Hero() {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor="#923515"
+                  stopColor="#383c5d"
                   stopOpacity=".01"
                 />
                 <stop
                   offset="1"
-                  stopColor="#923515"
+                  stopColor="#383c5d"
                   stopOpacity=".32"
                 />
               </linearGradient>
@@ -49,7 +49,7 @@ export default function Hero() {
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-5xl mx-auto text-center pb-12 md:pb-16">
             <h1
               className="h1 mb-4"
               data-aos="fade-up"
@@ -58,7 +58,7 @@ export default function Hero() {
               Reputation
             </h1>
             <p
-              className="text-xl text-gray-400 mb-8"
+              className="text-lg text-gray-500 mb-8"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -69,9 +69,10 @@ export default function Hero() {
               <div
                 data-aos="fade-up"
                 data-aos-delay="400"
+                className="mb-5 sm:mb-0 sm:mr-5"
               >
                 <a
-                  className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
+                  className="custom-btn btn-1"
                   href="#about"
                 >
                   Read more
@@ -82,7 +83,7 @@ export default function Hero() {
                 data-aos-delay="600"
               >
                 <a
-                  className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                  className="custom-btn btn-2"
                   href="https://api.whatsapp.com/send/?phone=2348142064130&text=Hello%2C+Mr+Adeobajesu.+I+got+your+contact+from+LinkedIn+and+I%27ll+love+to+have+a+conversation+with+you.%0A%0AMy+name+is+........+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noreferrer"

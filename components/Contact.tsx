@@ -38,8 +38,7 @@ export default function Contact({}: Props) {
     <div
       data-aos="fade-up"
       data-aos-delay="400"
-      className="flex my-40
-    px-10 items-center justify-evenly selection:bg-purple-100 selection:text-gray-100"
+      className="flex flex-col sm:flex-row my-10 sm:my-40 px-5 sm:px-10 items-center justify-center sm:justify-evenly selection:bg-[#0e2844] selection:text-gray-100"
     >
       {/* Contact Info */}
       <div>
@@ -50,7 +49,7 @@ export default function Contact({}: Props) {
         <div className="mb-5 ">
           <h2 className="text-xl font-bold">
             Ready to{" "}
-            <span className="underline decoration-purple-100">
+            <span className="underline decoration-Brown-100">
               start
             </span>
             ? contact me
@@ -64,7 +63,7 @@ export default function Contact({}: Props) {
             rel="noreferrer"
           >
             <div className="flex space-x-5">
-              <PhoneIcon className="text-purple-100 h-5 w-5 animate-pulse" />
+              <PhoneIcon className="text-Dark-100 h-5 w-5 animate-pulse" />
               <p className="text-sm md:text-base">
                 +234 814 206 4130
               </p>
@@ -72,13 +71,13 @@ export default function Contact({}: Props) {
           </a>
 
           <div className="flex space-x-5">
-            <EnvelopeIcon className="text-purple-100 h-5 w-5 animate-pulse" />
+            <EnvelopeIcon className="text-Dark-100 h-5 w-5 animate-pulse" />
             <p className="text-sm md:text-base">
               adeoba.mercies@gmail.com
             </p>
           </div>
           <div className="flex space-x-5">
-            <MapPinIcon className="text-purple-100 h-5 w-5 animate-pulse" />
+            <MapPinIcon className="text-Dark-100 h-5 w-5 animate-pulse" />
             <p className="text-sm md:text-base">
               Lagos, Nigeria - Remote
             </p>
@@ -87,44 +86,45 @@ export default function Contact({}: Props) {
       </div>
 
       {/* Contact Form */}
-      <div className="form">
+      <div className="form mt-10">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-full md:w-fit mx-auto"
+          className="flex flex-col space-y-3 w-full md:w-fit mx-auto"
           target="_blank"
         >
-          <div className="md:flex md:space-x-2">
+          <div className="md:flex md:space-x-3 space-y-3 md:space-y-0">
             <input
               {...register("name")}
-              placeholder="name"
-              className="contactInput"
+              placeholder="Name"
+              className="contactInput w-full md:w-auto flex-grow"
               type="text"
               required
             />
             <input
               {...register("email")}
-              placeholder="email"
-              className="contactInput"
+              placeholder="Email"
+              className="contactInput w-full md:w-auto flex-grow"
               type="email"
               required
             />
           </div>
+
           <input
             {...register("subject")}
-            placeholder="subject"
+            placeholder="Subject"
             className="contactInput"
             type="text"
             required
           />
           <textarea
             {...register("message")}
-            placeholder="message"
+            placeholder="Message"
             className="contactInput"
             required
           />
           <button
             type="submit"
-            className="bg-purple-100 py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-Dark-100 hover:bg-Dark-200 py-3 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

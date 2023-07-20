@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        dark_gradient:
+          "linear-gradient(to right, #0D0D0D, #1c1d25, #0D0D0D)",
+        dark_gradient_btn:
+          "linear-gradient(to right, #352b23, #95775c, #352b23)",
+      },
       colors: {
         gray: {
           100: "#EBF1F5",
@@ -31,17 +37,22 @@ module.exports = {
           900: "#391508",
           950: "#230d05",
         },
+        Brown: {
+          100: "#FFD966",
+          200: "#95775c",
+          300: "#352b23",
+        },
         Dark: {
-          100: "#FF8400",
-          200: "#bf451c",
+          100: "#455073",
+          200: "#2e364d",
           300: "#a93d18",
           400: "#923515",
           500: "#7c2d12",
           600: "#7C2D12",
           700: "#66250f",
-          800: "#4f1d0c",
-          900: "#391508",
-          950: "#230d05",
+          800: "#042b50",
+          900: "#02213b",
+          950: "#001C30",
         },
       },
       spacing: {

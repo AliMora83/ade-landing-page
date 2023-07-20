@@ -23,17 +23,17 @@ export default function PageIllustration() {
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stopColor="#923515"
+              stopColor="#95775c"
               stopOpacity=".01"
             />
             <stop
               offset=".538"
-              stopColor="#923515"
+              stopColor="#95775c"
               stopOpacity=".32"
             />
             <stop
               offset="1"
-              stopColor="#923515"
+              stopColor="#95775c"
               stopOpacity=".01"
             />
           </linearGradient>

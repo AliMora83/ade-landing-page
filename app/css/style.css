@@ -26,3 +26,55 @@
         text-gray-500 placeholder:text-gray-500 transition-all focus:border-gray-600
         focus:text-gray-600 hover:border-gray-600
     }
+
+
+.custom-btn {
+  width: 160px;
+  height: 45px;
+  color: #ededed;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-size: 0.9em;
+}
+
+/* 1 */
+.btn-1 {
+  background: rgb(48, 50, 71);
+  background: linear-gradient(0deg, rgb(20, 21, 30) 0%, rgb(63, 63, 104) 100%);
+  border: none;
+  color: #bbbdf1;
+  transition: transform 0.2s ease;
+}
+.btn-1:hover {
+   background: rgb(48, 50, 71);
+background: linear-gradient(0deg, rgb(51, 52, 84) 0%, rgb(25, 27, 39) 100%);
+color: #dbe4ff;
+font-weight: 700;
+transform: scale(0.95);
+}
+
+/* 2 */
+.btn-2 {
+  background: c;
+  background: linear-gradient(0deg, rgb(32, 31, 34) 0%, rgb(48, 47, 52) 100%);
+  border: none;
+  color: ##e6e6e6;
+  transition: transform 0.2s ease;
+}
+.btn-2:hover {
+   background: rgb(67, 65, 71);
+background: linear-gradient(0deg, rgb(48, 47, 52) 0%, rgb(32, 31, 34) 100%);
+color: #fafafa;
+font-weight: 700;
+transform: scale(0.95);
+}
+
+

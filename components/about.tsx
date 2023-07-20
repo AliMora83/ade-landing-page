@@ -4,9 +4,12 @@ import FeatImage01 from "@/public/images/adeoba.jpg";
 
 export default function About() {
   return (
-    <section id="about">
+    <section
+      id="about"
+      className=" selection:bg-[#0e2844] selection:text-gray-100"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-12 md:py-20">
           {/* Section header */}
           <div
             className="max-w-3xl mx-auto text-center pb-12 md:pb-16"
@@ -19,7 +22,7 @@ export default function About() {
             <h1 className="h2 mb-4">
               Adeobajesu Aboluwade
             </h1>
-            <p className="text-lg text-gray-400">
+            <p className="text-base text-gray-400">
               Adeobajesu is an{" "}
               <strong>
                 {" "}
@@ -69,14 +72,14 @@ export default function About() {
                   className="md:pr-4 lg:pr-12 xl:pr-16"
                   id="values"
                 >
-                  <h3 className="h3 mb-3">
+                  <h3 className="h4 mb-3">
                     My values
                   </h3>
                   <p className="text-xl text-gray-400 mb-4"></p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  <ul className="text-base text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Brown-200 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -86,7 +89,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Brown-200 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -96,7 +99,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Brown-200 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -106,7 +109,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Brown-200 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -116,7 +119,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Brown-200 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -131,14 +134,14 @@ export default function About() {
                   className="md:pr-4 lg:pr-12 xl:pr-16"
                   id="strengths"
                 >
-                  <h3 className="h3 mb-3">
+                  <h3 className="h4 mb-3">
                     Strengths
                   </h3>
                   <p className="text-xl text-gray-400 mb-4"></p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  <ul className="text-base text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Dark-100 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -148,7 +151,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Dark-100 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -158,7 +161,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Dark-100 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -170,7 +173,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-3 h-3 fill-current text-purple-100 mr-2 shrink-0"
+                        className="w-3 h-3 fill-current text-Dark-100 mr-2 shrink-0"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >

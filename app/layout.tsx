@@ -1,12 +1,9 @@
 import "./css/style.css";
-
 import {
   Inter,
   Architects_Daughter,
 } from "next/font/google";
-
 import Header from "@/components/ui/header";
-import Banner from "@/components/banner";
 import Head from "next/head";
 
 const inter = Inter({
@@ -25,7 +22,7 @@ const architects_daughter = Architects_Daughter({
 export const metadata = {
   title: "Adeoba Digital",
   description:
-    "Award winning social media professional",
+    "Award-winning social media professional",
 };
 
 export default function RootLayout({
@@ -35,10 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {" "}
-      {/* Use the Html component and set lang attribute */}
       <Head>
-        {/* Google Analytics tracking code */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-FRPEY2CQCB"
@@ -57,10 +51,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
       >
-        <div className="flex flex-col min-h-screen overflow-hidden">
+        <div className=""></div>
+        <div className="flex flex-col overflow-hidden">
           <Header />
           {children}
-          {/* <Banner /> */}
         </div>
       </body>
     </html>
