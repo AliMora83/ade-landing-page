@@ -49,7 +49,7 @@ export default function Contact({}: Props) {
         <div className="mb-5 ">
           <h2 className="text-xl font-bold">
             Ready to{" "}
-            <span className="underline decoration-Brown-100">
+            <span className="underline decoration-orange-600">
               start
             </span>
             ? contact me
@@ -124,7 +124,7 @@ export default function Contact({}: Props) {
           />
           <button
             type="submit"
-            className="bg-Dark-100 hover:bg-Dark-200 py-3 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-Dark-100 hover:bg-Dark-200 py-3 px-10 rounded-md text-white font-bold text-lg"
           >
             Submit
           </button>
