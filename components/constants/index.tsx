@@ -7,7 +7,7 @@ export const reviewsList = [
     img: "/images/ade_org.png",
   },
   {
-    name: "Ijeoma Agwu ",
+    name: "Ijeoma Agwu",
     review:
       "Adeobajesu is someone I can describe as skilled, insightful, intelligent, astute, adaptable and most importantly very resourceful. I recommend him without reservation in the areas of teaching, content creation, content strategy, and growth marketing.",
     more: "Counseling Psychologist | January 16, 2023",

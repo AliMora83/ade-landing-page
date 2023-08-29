@@ -47,6 +47,10 @@ export default function RootLayout({
             `,
           }}
         ></script>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <body
         className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
@@ -56,6 +60,8 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
       </body>
     </html>
   );
