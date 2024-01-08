@@ -40,7 +40,7 @@ export default function About() {
             </h1>
             <p className="text-base text-gray-400">
             I help people and businesses <strong>create and grow their online brands </strong>. <br/>
-            I know how to use social media and brand positioning to your advantage.
+            I know how to use <strong>social media and brand positioning</strong> to your advantage.
             </p>
           </div>
 
