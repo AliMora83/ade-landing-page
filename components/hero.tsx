@@ -1,4 +1,10 @@
+import Image from "next/image";
+
+import WhatsApp from "@/public/images/whatsapp.png";
+
 export default function Hero() {
+
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative selection:bg-[#0e2844] selection:text-gray-100">
@@ -54,8 +60,7 @@ export default function Hero() {
               className="h1 mb-4"
               data-aos="fade-up"
             >
-              Managing your Story & Digital
-              Reputation
+              Helping you learn and apply digital principles
             </h1>
             <p
               className="text-lg text-gray-500 mb-8"
@@ -81,14 +86,21 @@ export default function Hero() {
               <div
                 data-aos="fade-up"
                 data-aos-delay="600"
+              
               >
                 <a
-                  className="custom-btn btn-2"
+                  className="custom-btn-4 btn-3"
                   href="https://api.whatsapp.com/send/?phone=2348142064130&text=Hello%2C+Mr+Adeobajesu.+I+got+your+contact+from+LinkedIn+and+I%27ll+love+to+have+a+conversation+with+you.%0A%0AMy+name+is+........+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WhatsApp me
+                   <Image
+                className="max-w-full mx-auto md:max-w-none h-auto rounded-md"
+                src={WhatsApp}
+                width={40}
+                height={40}
+                alt="whatsapp"
+              />
                 </a>
               </div>
             </div>

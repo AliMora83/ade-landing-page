@@ -35,27 +35,12 @@ export default function About() {
                 alt="ade image"
               />
             </div>
-            <h1 className="h2 mb-4">
+            <h1 className="h4 mb-4">
               Adeobajesu Aboluwade
             </h1>
             <p className="text-base text-gray-400">
-              Adeobajesu is an{" "}
-              <strong>
-                {" "}
-                award winning social media
-                professional
-              </strong>{" "}
-              with years of experience managing,
-              building, and creating content for
-              brand social media accounts. He
-              holds a
-              <strong>
-                {" "}
-                Bachelor's Degree
-              </strong>{" "}
-              in Philosophy. In addition, he holds
-              certification as a{" "}
-              <strong> Digital Ad Expert.</strong>
+            I help people and businesses <strong>create and grow their online brands </strong>. <br/>
+            I know how to use social media and brand positioning to your advantage.
             </p>
           </div>
 
