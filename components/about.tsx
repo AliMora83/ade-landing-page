@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import FeatImage01 from "@/public/images/adeoba.jpg";
+import FeatImage01 from "@/public/images/adeoba3.jpeg";
 
 import { tableItems } from "./constants";
 
