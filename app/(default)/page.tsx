@@ -18,7 +18,7 @@ export default function Home() {
       <About />
       {/* <Features /> */}
       <Medium />
-      <Testimonials />
+  
       <Contact />
     </>
   );
