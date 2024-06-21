@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import FeatImage01 from "@/public/images/adeoba3.jpeg";
 
-import { tableItems } from "./constants";
+import { tableItems } from "./constants"
 
 export default function About() {
   return (
